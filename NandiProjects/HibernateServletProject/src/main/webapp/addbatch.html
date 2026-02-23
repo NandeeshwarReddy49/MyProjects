@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color:  rgba(113, 212, 38, 0.671);
+    }
+    form{
+        height: 400px;
+        width: 400px;
+        border: none;
+        border-radius: 10px;
+        margin: 90px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+        background-color: rgba(136, 234, 61, 0.671);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    input{
+        padding: 10px 20px;
+        width: 250px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    input:focus{
+        border: 2px solid  rgb(5, 132, 32);
+    
+    }
+    p{
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a{
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+        width: 120px;
+        padding: 8px 15px;
+        margin-top: 20px;
+        font-weight: bold;
+        background-color: rgb(212, 121, 228);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    button:hover{
+        background-color: rgba(43, 96, 3, 0.553);
+        color: aliceblue;
+    }
+</style>
+</head>
+<body>
+	<form action="addbatch" method="post">
+	<!-- <label>Enter Id :</label> -->
+	<input type="text" name="bid" placeholder="Batch ID">
+	<!-- <label>Trainer Name :</label> -->
+	<input type="text" name="trainername" placeholder="Trainer Name">
+	<!-- <label>Subject Name :</label> -->
+	<input type="text" name="subject" placeholder="Subject">
+	<!-- <label>Start Date :</label> -->
+	<input type="text" name="startdate" placeholder="start-Date">
+	<!-- <label>Time :</label> -->
+	<input type="text" name="time" placeholder="Time">
+	<button>Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: rgb(47, 213, 213);
+    }
+    form{
+        height: 420px;
+        width: 400px;
+        border: none;
+        border-radius: 10px;
+        margin: 70px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 13px;
+        background-color: rgba(0, 255, 255, 0.671);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    input{
+        padding: 10px 20px;
+        width: 250px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+    }
+    input:focus{
+        border-color: aqua;
+        border: 1px solid;
+    
+    }
+    p{
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a{
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+        width: 120px;
+        padding: 8px 15px;
+        margin-top: 20px;
+        font-weight: bold;
+        background-color: rgb(142, 142, 184);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.553);
+        color: aliceblue;
+    }
+     h1{
+       
+      
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+</head>
+<body>
+	
+	<form action="signup" method="post">
+	<h1>SignUp...</h1>
+	<!-- <label>Email :</label> -->
+	<input type="email" name="email" placeholder="Email">
+	<!-- <label>Password :</label> -->
+	<input type="password" name="password" placeholder="Password">
+	<!-- <label>Name :</label> -->
+	<input type="text" name="name" placeholder="Name">
+	<!-- <label>Mobile Number</label> -->
+	<input type="tel" name="mobilenumber" placeholder="Mobile Number">
+	<!-- <label>address</label> -->
+	<input type="text" name="address" placeholder="Address">
+	<button>Signup</button>
+	<p>Already Have an Account....<a href="login.html"> Login</a></p>
+	
+	</form>
+</body>
+</html>
